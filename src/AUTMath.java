@@ -72,6 +72,10 @@ public class AUTMath {
      * @return the result of raising the first parameter to the power of the second parameter.
      */
     public static int pow(int base, int power) {
-        return base * pow(base, power - 1);
+        if (power == 1) {
+            return base;
+        } else {
+            return base * pow(base, power - 1);
+        }
     }
 }
