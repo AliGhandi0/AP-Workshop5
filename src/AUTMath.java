@@ -45,7 +45,11 @@ public class AUTMath {
      * @return The result of dividing the first parameters by the second parameter
      */
     public static int divide(int num1, int num2) {
-        return num1 / num2;
+        if (num2 == 0) {
+            return num1;
+        } else {
+            return num1 / num2;
+        }
     }
 
     /**
